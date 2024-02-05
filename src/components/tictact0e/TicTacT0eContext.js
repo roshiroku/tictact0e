@@ -9,16 +9,6 @@ export const MIN_SIZE = 3;
 export const MAX_SIZE = 10;
 
 class TicTacT0eContext {
-  // size = MIN_SIZE;
-
-  // /** @type {(size: number) => void} */
-  // setSize;
-
-  // player = 0;
-
-  // /** @type {(player: number) => void} */
-  // setPlayer;
-
   /** @type {TicTacT0eMatch} */
   match;
 
@@ -36,9 +26,6 @@ class TicTacT0eContext {
 
   /** @type {TicTacT0eMatchEnd | undefined} */
   endState;
-
-  // /** @type {(state: TicTacT0eMatchEnd | undefined) => void} */
-  // setEndState;
 }
 
 export default createContext(TicTacT0eContext);
