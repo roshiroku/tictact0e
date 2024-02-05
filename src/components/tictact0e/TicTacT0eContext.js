@@ -1,6 +1,7 @@
 /**
  * @typedef {import("../../scripts/tictact0e/TicTacT0eMatch").default} TicTacT0eMatch
- * @typedef {{ winner?: number; row?: number; col?: number; diag?: number; tied?: boolean; }} TicTacT0eMatchEnd
+ * @typedef {import("../../scripts/tictact0e/graph/Edge").default} Edge
+ * @typedef {{ winner?: number; edge?: Edge; tied?: boolean; }} TicTacT0eMatchEnd
  */
 
 import { createContext } from "react";
