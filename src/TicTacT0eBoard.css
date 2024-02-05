@@ -1,0 +1,35 @@
+.pulse {
+  position: relative;
+}
+
+.pulse:before,
+.pulse:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(circle, currentColor 0%, rgba(0, 0, 0, 0) 75%);
+  border-radius: 100%;
+  animation: pulseEffect 2s infinite linear;
+}
+
+.pulse:after {
+  animation-delay: 1s; /* Delays the second pulse */
+}
+
+@keyframes pulseEffect {
+  0%,
+  100% {
+    transform: scale(0.25);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0.5);
+    opacity: 0.25;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
